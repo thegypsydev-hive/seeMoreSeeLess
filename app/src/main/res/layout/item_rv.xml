@@ -13,44 +13,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:maxLines="2"
-        android:ellipsize="end"
+        android:textColor="@color/blue"
         app:layout_constrainedWidth="true"
-        android:text="1kjbkbkdsgbjkbjbkjkjkkhkkbkbkdsgbjkbjb76767kjbkbkdsg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/see_more"
-        />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/long_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
-    <TextView
-        android:id="@+id/see_more"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="See More"
-        android:textColor="@color/blue"
-        app:layout_constraintStart_toEndOf="@+id/small_text"
-        app:layout_constraintBottom_toBottomOf="@id/small_text"
-        app:layout_constraintEnd_toEndOf="@id/guideline"
-
-        />
-
-    <androidx.constraintlayout.widget.Barrier
-        app:barrierDirection="end"
-        android:id="@+id/guideline"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
